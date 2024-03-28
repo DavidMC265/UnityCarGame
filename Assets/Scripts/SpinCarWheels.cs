@@ -6,6 +6,6 @@ public class SpinCarWheels : MonoBehaviour
 {
     void Update()
     {
-        transform.Rotate(1f ,0f ,0f, Space.Self);
+        transform.Rotate(3f ,0f ,0f, Space.Self);
     }
 }
