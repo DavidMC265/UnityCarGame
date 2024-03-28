@@ -18,8 +18,8 @@ public class Camera_RaceTrack : MonoBehaviour
     private void FixedUpdate()
     {
         transform.position = target.position - offset;
-        Vector3 targetRotationEuler = target.rotation.eulerAngles;
-        Quaternion targetRotation = Quaternion.Euler(0f, targetRotationEuler.y, 0f);
-        transform.rotation = targetRotation;
+        // Vector3 targetRotationEuler = target.rotation.eulerAngles;
+        // Quaternion targetRotation = Quaternion.Euler(0f, targetRotationEuler.y, 0f);
+        // transform.rotation = targetRotation;
     }
 }
