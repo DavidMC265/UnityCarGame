@@ -1258,6 +1258,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Roads
       objectReference: {fileID: 0}
+    - target: {fileID: 4418473098069316928, guid: d20fe5d0d58ca5345808e7be8bbc410c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.77
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 8416272007918961125, guid: d20fe5d0d58ca5345808e7be8bbc410c, type: 3}
@@ -1904,7 +1908,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 498022508}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b74a6fd9d0fc0fb4e8fb483e7bafa371, type: 3}
   m_Name: 
@@ -1926,9 +1930,9 @@ MonoBehaviour:
     powered: 1
     sterable: 0
     hasBrakes: 1
-  motorTorque: 10000
-  brakeTorque: 20000
-  steeringAngle: 90
+  motorTorque: 2000
+  brakeTorque: 2000
+  steeringAngle: 45
 --- !u!114 &1442682408
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1936,13 +1940,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 498022508}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cef3bd958d5cd38409d8a0d5dc00a143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
-  speedTurn: 1
+  speed: 30
+  speedTurn: 1.5
 --- !u!114 &1453831623
 MonoBehaviour:
   m_ObjectHideFlags: 0
