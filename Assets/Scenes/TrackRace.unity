@@ -577,6 +577,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3020650899045559741, guid: a9cbfe7195f75844aa7ec0619ca7616f, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3815435553298920706, guid: a9cbfe7195f75844aa7ec0619ca7616f, type: 3}
       propertyPath: m_LocalScale.x
       value: 3
@@ -650,6 +654,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4591691155392393144, guid: a9cbfe7195f75844aa7ec0619ca7616f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1442682408}
+    - targetCorrespondingSourceObject: {fileID: 4591691155392393144, guid: a9cbfe7195f75844aa7ec0619ca7616f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1442682409}
     - targetCorrespondingSourceObject: {fileID: 4298813578438325889, guid: a9cbfe7195f75844aa7ec0619ca7616f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 498022518}
@@ -1908,7 +1915,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 498022508}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b74a6fd9d0fc0fb4e8fb483e7bafa371, type: 3}
   m_Name: 
@@ -1930,9 +1937,9 @@ MonoBehaviour:
     powered: 1
     sterable: 0
     hasBrakes: 1
-  motorTorque: 2000
-  brakeTorque: 2000
-  steeringAngle: 45
+  motorTorque: 1000000
+  brakeTorque: 2000000
+  steeringAngle: 90
 --- !u!114 &1442682408
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1947,6 +1954,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 30
   speedTurn: 1.5
+--- !u!114 &1442682409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498022508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f80dda5f32d1e543828c683f17453e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frontRight: {fileID: 498022516}
+  frontLeft: {fileID: 498022517}
+  backRight: {fileID: 498022514}
+  backLeft: {fileID: 498022515}
+  Acceleration: 500
+  BrakingForce: 300
 --- !u!114 &1453831623
 MonoBehaviour:
   m_ObjectHideFlags: 0
